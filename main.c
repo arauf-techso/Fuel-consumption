@@ -88,8 +88,7 @@ void main()
         }
         break;
     }
-
-    printf("\n\n***************************************************");
+    printf("\n\n****************************************************");
     total_mileage = traveled_km[1] - traveled_km [0];
     printf("\n Total mileage: %.3f km%c",total_mileage,(total_mileage == 1)?' ':'s');
     printf("\n Total fuel: %.3f litter%c",total_fuel,(total_fuel == 1)?' ':'s');
@@ -97,7 +96,7 @@ void main()
     printf("\n Total used fuel: %.3f litter%c",total_fuel,(total_fuel == 1)?' ':'s');
     average = total_mileage / total_fuel;
     printf("\n Average (km/l): %.3f",average);
-    printf("\n***************************************************");
+    printf("\n****************************************************");
 
     getch();
 }
