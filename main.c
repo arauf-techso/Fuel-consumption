@@ -43,7 +43,7 @@ void main()
         }
         printf(" Enter mileage at the start of journey (kilometers): ");
         scanf("%f",&traveled_km[0]);
-        printf(" Enter mileage at the end of journey (kilometers): ");
+        printf(" -|Enter mileage at the end of journey (kilometers): ");
         scanf("%f",&traveled_km[1]);
         i++;
     }
@@ -51,19 +51,19 @@ void main()
 
     for (;;)
     {
-        printf(" Enter fuel level at start (litters): ");
+        printf(" --------------|Enter fuel level at start (litters): ");
         scanf("%f",&fuel[0]);
         total_fuel += fuel[0];
-        printf(" Enter fuel level at the end (litters): ");
+        printf(" ------------|Enter fuel level at the end (litters): ");
         scanf("%f",&fuel[1]);
-        printf("\n Have you refilled your fuel tank anywhere?\n Press Y for yes and N for no: ");
+        printf("\n Have you refilled your fuel tank anywhere?\n ---------|Press Y for yes and N for no: ");
         yorn = charYorN();
         if (yorn == 'y')
             goto refilling;
         if (fuel[0] < fuel[1])
         {
             printf("\n\n Your fuel at the end of journey is more then when you started!");
-            printf("\n Have you refilled your fuel tank anywhere.\n Press Y for yes and N for no : ");
+            printf("\n Have you refilled your fuel tank anywhere?\n --------|Press Y for yes and N for no : ");
             yorn = charYorN();
             if (yorn == 'n')
             {
